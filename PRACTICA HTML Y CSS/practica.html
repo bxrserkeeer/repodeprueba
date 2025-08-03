@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--atributo "translate para indicar si se quiere o no traducir un texto o palabra en especifico"-->
+    <!--utilizar las variables de la propiedad "open graph" para incluir meta datos orientados a redes sociales y luego utilizar "open graph debugger para corroborar que el codigo esté bien implementado"-->
+    <meta charset="UTF-8">
+    <!--la etiqueta "meta" se encarga de la codificación de la pagina web, tambien se puede utilizar para agregar propiedades especiales -->
+    <title>PRIMERA PAGINA WEB</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="top">PRIMERA PAGINA WEB</h1>
+        <nav>
+            <!--atributo "acceskey para programar atajos de ratón dentro de la pagina"-->
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">nuestros proyectos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Servicios</a></li>
+            </ul>
+            <form>
+                <label for="search1">busqueda :</label>
+                <input id="search1" accesskey="A" type="search">
+                <label for="submit1">buscar :</label>
+                <input id="submit1" type="submit">
+            </form>
+        </nav>
+    </header>
+    <main>
+    <article>
+        <section class="parrafo1">
+            <h2>SEGUNDO TITULO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate repellat explicabo iure eius repudiandae nihil a magnam, reprehenderit, ea nemo, amet ipsa alias accusamus cupiditate facere dolor. Unde, nesciunt maxime! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, facere voluptates quisquam, aperiam vitae molestias accusantium in modi itaque tempore obcaecati voluptatibus temporibus amet impedit eum, eaque quibusdam aliquid ducimus.</p>
+            <h3>TERCER TITULO</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam doloribus quos voluptatum magni labore sequi corporis ut, veritatis, autem eligendi reprehenderit ab nemo repudiandae excepturi iste non reiciendis natus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis molestias doloribus eaque omnis consectetur autem qui nobis cumque assumenda quos totam optio, perferendis, vitae error deleniti sequi ea, quam nam.</p>
+        <img src="imagenes/bobmafia.jpg" alt="bob mafioso" title="BOB MAFIOSO">
+        </section>
+        <section class="parrafo2">
+            <h3>CUARTO TITULO</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam doloribus quos voluptatum magni labore sequi corporis ut, veritatis, autem eligendi reprehenderit ab nemo repudiandae excepturi iste non reiciendis natus. Lorem <a href="#top">volver al Inicio</a> ipsum dolor, sit amet consectetur adipisicing elit. Debitis molestias doloribus eaque omnis consectetur autem qui nobis cumque assumenda quos totam optio, perferendis, vitae error deleniti sequi ea, quam nam.</p>
+            <!--leer sobre la etiqueta "picture" y sus atributos-->
+            <!--atributo "title" para mejorar la accesibilidad de un archivo-->
+        <img src="imagenes/bobmafia.jpg" alt="bob esponja dandole el maldito corte" title="BOB MAFIA">
+        </section>
+    </article>
+    <aside>
+        <!--atributo "data" para agregar metadatos o información y enlazarlo con javascript-->
+        <div class="datos-relacionados">
+        <h2>relacionados</h2>
+        <ul class="list">
+        <li><a href= "#">trabaja con nosotros</a></li>
+        <li><a href= "#">servicios</a></li>
+        <li><a href= "#">Contacto</a></li>    
+        </ul>
+        </div>
+        <div class="texto-aparte">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, tempora quidem quis sed quaerat exercitationem ipsam perferendis, iure rem error id excepturi. Expedita unde dicta corrupti odio debitis eveniet mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dicta laboriosam ea, nisi temporibus, animi veritatis consequuntur consectetur praesentium hic recusandae maxime aliquam esse, tempora aut. Tenetur tempore officiis fugiat?</p>
+        </div>  
+    </aside>
+    </main>
+    <footer>
+        <p>todos los derechos reservados ignacio molina SA</p>
+    </footer>   
+</body>
+</html>

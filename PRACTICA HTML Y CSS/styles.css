@@ -1,0 +1,79 @@
+/* usar ">" para asignar caracteristicas a elementos dentro de una etiqueta madre.
+ej: 
+article > p < todos los "p" dentro del article quedaran dentro del estilo 
+<article>
+<p>recorcholis</p> <primero elemento beneficiado por el estilo
+<p>reflauta</p> <segundo elemento beneficiado por el estilo
+<footer>
+<p>caspitas</p> 
+</footer> 
+</article>*/
+/* usar "~" para asisgnar una propiedad al elemento que le siga al que se seleccione primero y permitiendo que hayan elementos entre medio y usar "+" para lo mismo, pero para el elemento que venga inmediatamente despúes*/
+
+body{
+    margin: 0;
+    background-color: #333;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* comentario jiji */
+
+header{
+    background-color: #333;
+    color: #f0f0f0;
+    border: 2px solid #222;
+    border-radius: 10px;
+    width: 60%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+li{
+    display: inline-block;
+    margin-right: 10px;
+    background-color: yellow                    ;
+    border: 2px solid black
+}   
+.list{
+    background-color: chocolate;
+}
+main{
+    color: #f1f1f1;
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+.parrafo1{
+    padding: 15px;
+    width: 80%;
+    border: 2px solid #444;
+    border-radius: 10px;
+
+}
+/* utilizar la propiedad "box-sizing: border-box;" para que el ancho y alto de los elementos se calculen incluyendo el padding y el borde, evitando que se desborden */
+.parrafo2{
+    padding: 15px;
+    width: 80%;
+    border: 2px solid #444;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/*al incluir un enlace se puede usar la propiedad "a:link, visited, hover o active para cambiar el color del link en sus diferentes estados"*/
+aside{
+    width: 300px;
+    height: 80%;
+    background-color: #333;
+    border: #444 solid 2px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}

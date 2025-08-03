@@ -1,0 +1,97 @@
+/* usar ">" para asignar caracteristicas a elementos dentro de una etiqueta madre.
+ej: 
+article > p < todos los "p" dentro del article quedaran dentro del estilo 
+<article>
+<p>recorcholis</p> <primero elemento beneficiado por el estilo
+<p>reflauta</p> <segundo elemento beneficiado por el estilo
+<footer>
+<p>caspitas</p> 
+</footer> 
+</article>*/
+/* usar "~" para asisgnar una propiedad al elemento que le siga al que se seleccione primero y permitiendo que hayan elementos entre medio y usar "+" para lo mismo, pero para el elemento que venga inmediatamente despúes*/
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #21242f;
+}
+header{
+    background-color: #21242f;
+    color: #b6bdd1;
+    border: 2px solid #0f4343;
+    border-radius: 10px;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.links{
+    color: purple;
+    text-decoration: none;
+    display: inline;
+
+}
+li{
+    list-style-type: none;
+}
+
+.links:hover{
+    color: #968ce8;
+    outline: 2px solid #968ce8;
+}
+/* utilizar la propiedad "box-sizing: border-box;" para que el ancho y alto de los elementos se calculen incluyendo el padding y el borde, evitando que se desborden */
+main{
+    color: #b6bdd1;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow:  5px 5px 5px #0f4343;
+    display: flex;
+}
+#section{
+    border: 2px solid #0f4343 ;
+    border-radius: 10px;
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+}
+.speon{
+    width: 500px;
+    display: flex;
+    align-items: right;
+    
+}
+aside{
+    border: 2px solid #0f4343;
+    border-radius: 10px;
+    width: 40%;
+    padding: 10px;
+    margin: 20px;
+    max-height: 1230px;
+    font-size: 20px;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+#aside_title{
+    color: #343152;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+footer{
+    background-color: #21242f;
+    color: #b6bdd1;
+    border: 2px solid #0f4343;
+    border-radius: 10px;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+}
