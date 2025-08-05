@@ -42,10 +42,14 @@ header{
 li{
     list-style-type: none;
 }
+/*utilizar "outline" en lugar de "border" para evitar conflictos de medidas*/
 
 .links:hover{
     color: #968ce8;
     outline: 2px solid #968ce8;
+}
+.links:active{
+    color: red;
 }
 /* utilizar la propiedad "box-sizing: border-box;" para que el ancho y alto de los elementos se calculen incluyendo el padding y el borde, evitando que se desborden */
 main{
@@ -53,8 +57,11 @@ main{
     font-size: 30px;
     font-weight: bold;
     text-shadow:  5px 5px 5px #0f4343;
-    display: flex;
+    display: flex
 }
+/* utllizar position "absolute" para posicionar elementos de manera libre dentro de contenedor general y usar "relative" en el conteneor padre para mover contenedores hijos dentro de este primer contenedor */
+/* usar position "fixed" para posicionar elementos de manera fija en la pantalla, independientemente del scroll */
+/* usar position "sticky" para que un elemento se quede fijo en la parte superior de la pantalla cuando se hace scroll hasta que su contenedor padre se desplace completamente fuera de la vista, tomando como guia el elemento padre "relative" en caso de no haber tal elemento, se guia con el documento */
 #section{
     border: 2px solid #0f4343 ;
     border-radius: 10px;
@@ -80,7 +87,7 @@ aside{
     text-overflow: ellipsis;
 }
 #aside_title{
-    color: #343152;
+    color: #fff;
     text-align: center;
     font-size: 25px;
     margin-bottom: 10px;
